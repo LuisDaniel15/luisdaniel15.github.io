@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(251, 251, 251)
+}
+
+h1,h2 {
+    font-size: 16px;
+    color: rgba(12, 12, 12, 0.843);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6em;
+}
+
+p {
+    color: rgb(32, 32, 32);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*////////////////////////////////////////// NAV - MENU DE LA PAGINA //////////////////////////////////// */
+
+.menu-ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+}
+  @media (max-width: 800px) {
+    .menu-ul {
+      background: #000000;
+      /* align-items: flex-end; */
+      height: auto;
+      align-items: center;
+  
+    }
+   }
+  
+   @media (max-width: 550px) {
+    .menu-ul {
+      flex-direction: column;
+      background: #fff;
+      align-items: flex-end;
+      height: auto;
+    }
+   }
+  
+/* Logo en el menu */
+  
+  .menu-li > a > img {
+    height: 60px;
+    width: 100px;
+    display: flex;
+    justify-items: flex-start;
+    border-radius: 15px;
+    background-size: cover;
+  }
+  
+  .menu-li {
+    padding: 15px 30px;
+    font-size: 1.3em;
+  }
+  @media (max-width: 800px) {
+    .menu-li {
+      padding: 5px 10px;
+      font-size: 1.1em;
+    }
+   }
+  
+
+  .menu-link {
+    color: #ffff;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 800px) {
+    .menu-link {
+      color: #ffffff;
+    }
+   }
+   
+  @media (max-width: 550px) {
+    .menu-link {
+      color: #000000;
+    }
+   }
+  
+  .menu-link:hover {
+    color: #F1C40F;
+    border-radius: 5px;
+    opacity: 1;
+  }
+  
+  .menu-ul li:hover .menu-v {
+    display: block;
+  }
+  
+  .menu-v {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  .menu-v li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+  }
+  
+  .menu-v li:hover {
+    background-color: #F1C40F;
+    border-radius: 15PX;
+  }
+
+
+/* //////// TEXTO PRINCIPAL CONTACTO ///////////// */
+.texto-enc {
+    width: auto;
+    padding: 20px 10px;
+}
+
+
+/* //////// CONTENEDOR CONTACTO  ///////////// */
+
+.contacto {
+    width: auto;
+    margin: auto;
+    margin-bottom: 32px;
+    margin-top: 10px;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin: auto;
+}
+
+.tel {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 800px) {
+    .cont {
+        column-gap: 10px;
+        text-align: center;
+    }
+}
+
+.tel > i {
+    border-radius: 50%;
+    border: #000 solid  1px;
+    padding: 5px;
+}
+
+
+/* ///////////////// CONTENEDOR DEL IFRAME ////////////*/
+.ifram {
+    height: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 55px;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+.texto-f {
+    text-align: center;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    .texto-f {
+        width: auto;
+        font-size: 0.7em;
+        text-align: center;
+    }
+}
+
+
+
+/* //////////// FORMULARIO ENVIO DE DATOS //////////// */
+
+.cont-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    padding: 5px;
+}
+.cont-form textarea {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (max-width: 800px) {
+    .cont-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .cont-form {
+        width: 90%;
+    }
+}
+
+.inp-f {
+    width: 50%;
+    padding: 10px;
+    /* text-align: center; */
+    margin: auto;
+    font-size: 1em;
+}
+
+.bnt-enviar {
+    margin: auto;
+    font-size: 0.8em;
+    background: #F1C40F;
+    color: #000;
+    border-radius: 5px;
+    border: 0.5px solid #dfaf00;
+    margin-top: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+
+/* //////////////////////////////////// FOOTER DE LA PAGINA ////////////////////////////////////*/
+
+
+.final {
+    background: #ECF0F1;
+    height: 350px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(20, 20, 20);
+    font-size: 1.2em;
+}
+
+.pie {
+    margin: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+@media (max-width: 800px) { 
+    .pie {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 15px;
+      width: auto;
+    }
+   } 
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    .copi {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.item i {
+    font-size: 0.7em;
+    padding: 10px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    .item i {
+        font-size: 0.5em;
+    }
+}
+
+.item1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    .item1 a {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    .derechos {
+        font-size: 0.8em;
+    }
+}
+
+.pie img {
+    width: 150px;
+    height: 100px;
+}
